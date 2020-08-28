@@ -1,5 +1,7 @@
 #new ver on HEAD v1#
 
+#new ver on HEAD v2#
+
 
 #!/usr/bin/python
 import hashlib
