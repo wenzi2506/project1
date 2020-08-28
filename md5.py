@@ -28,7 +28,7 @@ with open(sys.argv[1], 'rb') as f:
 	print("MD5: %s" % md5.hexdigest())
 
 try:
-    input("Press enter to terminate the program")
+    input("PRESS enter to terminate the program")
 except:
     pass
 
