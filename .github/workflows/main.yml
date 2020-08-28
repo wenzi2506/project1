@@ -19,7 +19,7 @@ jobs:
     # это похоже на tasks
     steps:
       - name: Print "hi"
-      - run: echo "hi, i need job"4
+        run: echo "hi, i need job"4
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
