@@ -1,0 +1,32 @@
+# This is a basic workflow to help you get started with Actions
+
+name: GH_A
+
+# На чем будем запускать, в этому случае master/ и на какое действие, в этом случае на push
+# и pull_request
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# Их может много, запускается на vm, это типа докер, в этом случае на ubuntu
+jobs:
+  # название
+  build:
+    runs-on: ubuntu-latest
+
+    # это похоже на tasks
+    steps:
+      - name: Print "hi"
+      - run: echo "hi, i need job"4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
