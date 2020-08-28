@@ -30,3 +30,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: Bandit Check
+  # You may pin to the exact commit or the version.
+  # uses: jpetrucciani/bandit-check@4b67302e8e863966b82376489a91b34ba1a28ddf
+        uses: jpetrucciani/bandit-check@1.6.2
+         with: .
+    # File or directory to run bandit on
+         path: .
